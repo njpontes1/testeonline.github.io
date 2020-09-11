@@ -1,0 +1,28 @@
+h1{
+    font-size: 80px;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+body{
+    background: #383838;
+    background: -webkit-radial-gradient(center, #383838, #FFFFFF);
+    background: -moz-radial-gradient(center, #383838, #FFFFFF);
+    background: radial-gradient(ellipse at center, #383838, #FFFFFF);}
+
+
+table{
+    width: 100%;
+   
+   
+}
+td{
+    width: 33%;
+    
+    font-size: 50px;
+   
+    text-align: center;
+}
+
