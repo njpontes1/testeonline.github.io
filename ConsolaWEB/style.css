@@ -88,17 +88,17 @@ ul#menu:hover li:hover ~ li {
 
 ul#menu:not(:hover) li.highlighted { opacity: 1; }
 
-ul#menu li:nth-child(1) { background-image: url(leads.jpg); }
+ul#menu li:nth-child(1) { background-image: url(./assets/n64.png); }
 
-ul#menu li:nth-child(2) { background-image: url("https://overdrive2.webnode.com/_files/200000061-3678b376e4/NES%20(1).png"); }
+ul#menu li:nth-child(2) { background-image: url(./assets/gbc.png); }
 
-ul#menu li:nth-child(3) { background-image: url(completed-clients.jpg); }
+ul#menu li:nth-child(3) { background-image: url(./assets/psx.png); }
 
-ul#menu li:nth-child(4) { background-image: url(diary.jpg); }
+ul#menu li:nth-child(4) { background-image: url(./assets/nes.png); }
 
-ul#menu li:nth-child(5) { background-image: url(calendar.jpg); }
+ul#menu li:nth-child(5) { background-image: url(./assets/md.png); }
 
-ul#menu li:nth-child(6) { background-image: url(tables.jpg); }
+ul#menu li:nth-child(6) { background-image: url(./assets/nds.png); }
 
 ul#menu li:after {
   content: "";
