@@ -4,7 +4,7 @@
     <title>Retro OP</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://unpkg.com/xp.css" />
-   
+   <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
@@ -17,52 +17,30 @@
             <button aria-label="Close"></button>
           </div>
         </div>
-        <div class="window-body" >
-          <menu role="tablist">
-           <a href="index.html"> <button aria-selected="true" aria-controls="music">Nintendo Entertainment System</button></a>
-            <a href="md.html"><button  aria-controls="dogs">MD</button></a>
-           <a href="dos.html"><button aria-controls="food">DOS</button></a> 
-            <button aria-controls="food">ETC</button>
-          </menu>
-          <article role="tabpanel" id="music">
-              Controlos:<p><strong>Mover:</strong>  Arrow keys <strong>Botão A:</strong>  A <strong>Botão B:</strong>  S<strong>Start:</strong>  Enter <strong>Select:</strong>  Backspace </p>
-              <fieldset>
-                <legend>Jogos:</legend>
-                <div class="field-row">
-                  <input  id="radio29" type="radio" name="fieldset-example2" value="./teste/supermario.html">
-                  <label for="radio29">Super Mario Bros.  &emsp; </label>
-                  <input  id="radio34" type="radio" name="fieldset-example2" value="./teste/zelda.html">
-                  <label for="radio34">Zelda</label>
-                </div>
-                <div class="field-row">
-                  <input id="radio30" type="radio" name="fieldset-example2" value="./teste/tetris.html">
-                  <label for="radio30">Tetris</label>
-                </div>
-                <div class="field-row">
-                  <input id="radio31" type="radio" name="fieldset-example2" value="./teste/megaman.html">
-                  <label for="radio31">Megaman</label>
-                </div>
-                <div class="field-row">
-                  <input id="radio32" type="radio" name="fieldset-example2" value="./teste/castlevania.html">
-                  <label for="radio32">Castlevania</label>
-                </div>
-                <div class="field-row">
-                  <input id="radio33" type="radio" name="fieldset-example2" value="./teste/finalfantasy.html">
-                  <label for="radio33">Final Fantasy</label>
-                </div>
-              </fieldset>
-              <section class="field-row">
-                <button onclick="jsubmit();" >Run</button>
-                <label>Corre o Jogo Selecionado</label>
-              </section>
-            </article>
-      
+        <div class="window-body" style="background-color: white; " >
+          <table>
+
+            <tr>
+              <td>
+                <a href="dos.html">
+                <img class="icon" src="./icons/msdos.png" alt="msdos">
+                <p class="name">Dos Emulator</p>
+              </a>
+                
+              </td>
+              <td>
+                <a href="nes.html">
+                <img class="icon" src="./icons/nes.png" alt="">
+                <p class="name">Nes Emulator</p>
+              </a>
+              </td>
+            </tr>
+          </table>
          
       
         
           <section class="field-row" style="justify-content: flex-end">
-            <button>Info</button>
-           <a href="https://github.com/njpontes1/testeonline.github.io"><button >GitHub</button></a> 
+           
           </section>
         </div>
       </div>
@@ -81,4 +59,5 @@
 
       </script>
   </body>
+ 
 </html>

@@ -4,7 +4,7 @@
     <title>Retro OP</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://unpkg.com/xp.css" />
-   
+   <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
@@ -14,41 +14,41 @@
           <div class="title-bar-controls">
             <button aria-label="Minimize"></button>
             <button aria-label="Maximize"></button>
-            <button aria-label="Close"></button>
+            <a href="index.html">
+
+              <button aria-label="Close"></button>
+            </a>
           </div>
         </div>
         <div class="window-body" >
           <menu role="tablist">
-            <a href="index.html"> <button  aria-controls="music">NES</button></a>
-            <a href="md.html"><button  aria-controls="dogs">MD</button></a>
-           <a href="dos.html"><button aria-selected="true" aria-controls="food">Disk Operating System</button></a> 
-            <button aria-controls="food">ETC</button>
+             <button aria-selected="true" aria-controls="music">Disk Operating System</button>
           </menu>
           <article role="tabpanel" id="music">
               Controlos:<p><strong>Teclado + Rato</strong></p>
               <fieldset>
                 <legend>Jogos:</legend>
                 <div class="field-row">
-                  <input  id="radio29" type="radio" name="fieldset-example2" value="./DOS/keen4.html">
+                  <input  id="radio29" type="radio" name="fieldset-example2" value="./DOS/roms/keen4/public/index.html">
                   <label for="radio29">Commander Keen 4  &emsp; </label>
-                  <input  id="radio34" type="radio" name="fieldset-example2" value="./teste/zelda.html">
+                  <input  id="radio34" type="radio" name="fieldset-example2" value="./DOS/roms/monopoli/public/index.html">
                   <label for="radio34">Zelda</label>
                 </div>
                 <div class="field-row">
-                  <input id="radio30" type="radio" name="fieldset-example2" value="./teste/tetris.html">
-                  <label for="radio30">Tetris</label>
+                  <input id="radio30" type="radio" name="fieldset-example2" value="./DOS/roms/doom/public/index.html">
+                  <label for="radio30">Doom</label>
                 </div>
                 <div class="field-row">
-                  <input id="radio31" type="radio" name="fieldset-example2" value="./teste/megaman.html">
-                  <label for="radio31">Megaman</label>
+                  <input id="radio31" type="radio" name="fieldset-example2" value="./DOS/roms/abuse/public/index.html">
+                  <label for="radio31">Abuse</label>
                 </div>
                 <div class="field-row">
-                  <input id="radio32" type="radio" name="fieldset-example2" value="./teste/castlevania.html">
-                  <label for="radio32">Castlevania</label>
+                  <input id="radio32" type="radio" name="fieldset-example2" value="./DOS/roms/ac/public/index.html">
+                  <label for="radio32">Alien Carnage</label>
                 </div>
                 <div class="field-row">
-                  <input id="radio33" type="radio" name="fieldset-example2" value="./teste/finalfantasy.html">
-                  <label for="radio33">Final Fantasy</label>
+                  <input id="radio33" type="radio" name="fieldset-example2" value="./DOS/roms/cdogs/public/index.html">
+                  <label for="radio33">C-Dogs</label>
                 </div>
               </fieldset>
               <section class="field-row">
@@ -73,7 +73,7 @@
             for(i=0;i<radio.length;i++)
             {
                 if(radio[i].checked){
-                   window.open(radio[i].value,'popup','width=400,height=400'); 
+                   window.open(radio[i].value,'popup','width=640,height=480'); 
             
                 }
             }

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Retro OP</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+   <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="window" style="width: 100%">
+        <div class="title-bar">
+          <div class="title-bar-text">ROS - Retro Operating System</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <a href="index.html">
+
+              <button aria-label="Close"></button>
+            </a>
+          </div>
+        </div>
+        <div class="window-body" >
+          <menu role="tablist">
+            <button aria-selected="true" aria-controls="music">Nintendo Entertainment System</button>
+          </menu>
+          <article role="tabpanel" id="music">
+              Controlos:<p><strong>Mover:</strong>  Arrow keys <strong>Botão A:</strong>  A <strong>Botão B:</strong>  S<strong>Start:</strong>  Enter <strong>Select:</strong>  Backspace </p>
+              <fieldset>
+                <legend>Jogos:</legend>
+                <div class="field-row">
+                  <input  id="radio29" type="radio" name="fieldset-example2" value="./teste/supermario.html">
+                  <label for="radio29">Super Mario Bros.  &emsp; </label>
+                  <input  id="radio34" type="radio" name="fieldset-example2" value="./teste/zelda.html">
+                  <label for="radio34">Zelda</label>
+                </div>
+                <div class="field-row">
+                  <input id="radio30" type="radio" name="fieldset-example2" value="./teste/tetris.html">
+                  <label for="radio30">Tetris</label>
+                </div>
+                <div class="field-row">
+                  <input id="radio31" type="radio" name="fieldset-example2" value="./teste/megaman.html">
+                  <label for="radio31">Megaman</label>
+                </div>
+                <div class="field-row">
+                  <input id="radio32" type="radio" name="fieldset-example2" value="./teste/castlevania.html">
+                  <label for="radio32">Castlevania</label>
+                </div>
+                <div class="field-row">
+                  <input id="radio33" type="radio" name="fieldset-example2" value="./teste/finalfantasy.html">
+                  <label for="radio33">Final Fantasy</label>
+                </div>
+              </fieldset>
+              <section class="field-row">
+                <button onclick="jsubmit();" >Run</button>
+                <label>Corre o Jogo Selecionado</label>
+              </section>
+            </article>
+      
+         
+      
+        
+          <section class="field-row" style="justify-content: flex-end">
+            <button>Info</button>
+           <a href="https://github.com/njpontes1/testeonline.github.io"><button >GitHub</button></a> 
+          </section>
+        </div>
+      </div>
+      <script>
+
+          function jsubmit(){
+            var radio = document.getElementsByName('fieldset-example2');
+            for(i=0;i<radio.length;i++)
+            {
+                if(radio[i].checked){
+                   window.open(radio[i].value,'popup','width=400,height=400'); 
+            
+                }
+            }
+        }
+
+      </script>
+  </body>
+</html>
