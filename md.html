@@ -19,25 +19,25 @@
         </div>
         <div class="window-body">
           <menu role="tablist">
-            <button aria-selected="true" aria-controls="music">Nintendo Entertainment System</button>
-            <a href="md.html"><button  aria-controls="dogs">MD</button></a>
-           <a href=""><button aria-controls="food">DOS</button></a> 
+            <button  aria-controls="music">NES</button>
+            <a href="ms.html"><button aria-selected="true" aria-controls="dogs">Megadrive</button></a>
+            <button aria-controls="food">Food</button>
             <button aria-controls="food">ETC</button>
           </menu>
           <article role="tabpanel" id="music">
-              Controlos:<p><strong>Mover:</strong>  Arrow keys <strong>Botão A:</strong>  A <strong>Botão B:</strong>  S<strong>Start:</strong>  Enter <strong>Select:</strong>  Backspace </p>
+              <p>Nintendo Entertainment System</p>
               <fieldset>
                 <legend>Jogos:</legend>
                 <div class="field-row">
-                  <input  id="radio29" type="radio" name="fieldset-example2" value="./teste/supermario.html">
-                  <label for="radio29">Super Mario Bros.</label>
+                  <input id="radio29" type="radio" name="fieldset-example2">
+                  <label for="radio29">Nicki Minaj</label>
                 </div>
                 <div class="field-row">
                   <input id="radio30" type="radio" name="fieldset-example2">
                   <label for="radio30">Bell Towers</label>
                 </div>
                 <div class="field-row">
-                  <input id="radio31" type="radio" name="fieldset-example2" >
+                  <input id="radio31" type="radio" name="fieldset-example2">
                   <label for="radio31">The Glamorous Monique</label>
                 </div>
                 <div class="field-row">
@@ -46,8 +46,8 @@
                 </div>
               </fieldset>
               <section class="field-row">
-                <button onclick="jsubmit();" >Run</button>
-                <label>Corre o Jogo Selecionado</label>
+                <button>Reset Alarm...</button>
+                <label>Try this to get some attention</label>
               </section>
             </article>
       
@@ -67,19 +67,5 @@
           </section>
         </div>
       </div>
-      <script>
-
-          function jsubmit(){
-            var radio = document.getElementsByName('fieldset-example2');
-            for(i=0;i<radio.length;i++)
-            {
-                if(radio[i].checked){
-                   window.open(radio[i].value,'popup','width=400,height=400'); 
-            
-                }
-            }
-        }
-
-      </script>
   </body>
 </html>

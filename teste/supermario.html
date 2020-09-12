@@ -6,49 +6,29 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>Embedding Example</title>
 		
-		<link rel="stylesheet" href="stylegame.css">
+		<link
+  rel="stylesheet"
+  href="https://unpkg.com/xp.css"
+>
+
+<link rel="stylesheet" href="stylepopup.css">
 		<script type="text/javascript" src="https://unpkg.com/jsnes/dist/jsnes.min.js"></script>
 		<script type="text/javascript" src="nes-embed.js"></script>
-		<script>window.onload = function(){nes_load_url("nes-canvas", "supermario.nes");}</script>
+		<script>window.onload = function(){nes_load_url("nes-canvas", "./roms/supermario.nes");}</script>
 	
 
 		
-		<h1 >Super Mario Bros</h1>
-		<a href="./index.html"><h2 style="color: white;">Voltar</h2></a>
+		
+	
 		</div>
 
 	</head>
-	<body>
-<table>
-	<tr>
-		<td>
-<img src="./assets/supermariocover.png" alt="">
-<br>
-Super Mario Bros (1987)
-		</td>
-		<td>
-			<div style="margin: auto; width: 100%;">
-					<canvas id="nes-canvas" width="256" height="240" style="width: 100%"/>
-				</div>
-
-		</td>
-
-<td>
-	<p>Controls: <br> <br> Move: Arrow keys<br/>  Start: Enter <br> Select: Backspace<br/>A Button: A <br> B Button: S</p>
-
-</td>
-
-		<tr>
-
-
-		</tr>
+	<body >
+		<div >
+			
+			<canvas  id="nes-canvas" width="256" height="240" style="width: 100%"/>
+		 
+		</div>
 		
-
-		
-	</tr>
-</table>
-
-
-
 	</body>
 </html>

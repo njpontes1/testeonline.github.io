@@ -19,10 +19,10 @@
 <body>
   <canvas id="jsdos"></canvas>
   <script>
-    Dos(document.getElementById("jsdos"), {
-        wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
-        cycles: 1000,
-        autolock: false,
+    Dos(document.getElementById("jsdos"), { 
+      wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
+      cycles: 1000,
+      autolock: true,
     }).ready(function (fs, main) {
       fs.extract("./roms/ac.zip").then(function () {
         main(["-c", "CARNAGE"]).then(function (ci) {
