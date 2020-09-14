@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>js-dos 6.22</title>
+  <script src="js-dos.js"></script>
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <link rel="stylesheet" href="https://unpkg.com/xp.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+<body>
+  <div class="window">
+    <div class="title-bar">
+      <div class="title-bar-text">iNteractive Software Museum </div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="window-body">
+      <menu role="tablist">
+        <button aria-selected="true" aria-controls="music">Windows 1.01</button>
+
+      </menu>
+      <article role="tabpanel">
+        <table class="info">
+          <tr>
+            <td>
+              <p><strong>
+
+                Windows 1.01</p>
+              </strong> 
+              <canvas id="jsdos" class="nocursor" style="border: solid;" oncontextmenu="return false"></canvas>
+              <a href="fullscreen.html">Emulação Imersiva</a>
+
+            </td>
+
+            <td>
+          
+              <br>
+              <strong>
+                <p>Data de Lançamento:</p>
+              </strong>
+              <ul>
+                <li>
+                  <p>20 de Novembro de 1985</p>
+
+                </li>
+
+              </ul>
+              <br>
+              <strong>
+                <p>Requisitos minimos:</p>
+              </strong>
+              <ul>
+                <li>
+
+                  <p>MS-Dos 2.0+ </p>
+                </li>
+                <li>
+
+                  <p>256 Kb de RAM</p>
+                </li>
+                <li>
+
+                  <p>Presença de HD</p>
+                </li>
+              </ul>
+              <br>
+
+              <strong>
+                <p>Formato de Instalação:</p>
+              </strong>
+              <ul>
+                <li>
+                  <p>Disquetes (5x360Kb) </p>
+
+                </li>
+              </ul>
+            </td>
+            <td>
+
+              <p>
+                <strong>
+                  Informação Relevante:
+                </strong>
+                <br>
+                <br>
+                
+                &nbsp;&nbsp;&nbsp;&nbsp; O Windows 1.0 trouxe uma interface com cores vibrantes ao usuário, 
+                porém somente possível sua reprodução em monitores com cores, pouco 
+                comuns à época de seu lançamento. Foi também o primeiro sistema da Microsoft a 
+                utilizar Mouse, janelas e ícones. Nesta versão ainda não havia sobreposição de 
+                janelas, apenas comandos de "Zoom" para maximizar e "Iconize" para minimizar.
+              
+              </p>
+              <p>
+                <strong>
+                  Continha:
+
+                </strong>
+                <ul>
+                  <li>Jogo Reversi,</li>
+                  <li>Calendário</li>
+                  <li>Bloco de Notas</li>
+                  <li>MS Windows Writer</li>
+                  <li>Paint</li>
+                  <li>Programas de Comunicação</li>
+                 
+                </ul>   
+              </p>
+            </td>
+          </tr>
+        </table>
+        <section class="field-row">
+          <button onClick="window.location.reload();">Reset</button>
+          <label>Recomeçar Simulação</label>
+        </section>
+      </article>
+
+     
+    </div>
+  </div>
+  <script>
+
+    function jsubmit() {
+      var radio = document.getElementsByName('fieldset-example2');
+      for (i = 0; i < radio.length; i++) {
+        if (radio[i].checked) {
+          window.open(radio[i].value, 'width=400,height=400');
+
+        }
+      }
+    }
+
+  </script>
+
+  <script>
+    Dos(document.getElementById("jsdos")).ready((fs, main) => {
+      fs.extract("Win1.zip").then(() => {
+        main(["-c", "AUTORUN.BAT"])
+      });
+    });
+  </script>
+  <style type="text/css">
+    .nocursor {
+      cursor: none;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      width: 800px;
+    }
+  </style>
+</body>
+
+</html>
+
+
+
+</html>
